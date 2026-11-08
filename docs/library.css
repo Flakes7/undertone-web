@@ -1,0 +1,74 @@
+#libraryToggle { -webkit-app-region: no-drag; app-region: no-drag; border-radius: 7px; padding: 4px 6px; margin-left: -6px; height: 28px; }
+#libraryToggle svg { width: 17px; height: 17px; }
+#libraryToggle:hover, #libraryToggle[aria-expanded="true"] { background: #ffffff15; color: #fffaf3; }
+.volume-control { justify-self: end; display: flex; align-items: center; gap: 7px; width: min(100%, 106px); }
+.volume-control button { flex: none; padding: 4px 0; }
+.volume-control svg { width: 16px; height: 16px; color: #fff7e9b0; }
+#volume { width: 100%; }
+#mode { height: 12px; line-height: 12px; margin-top: 2px; text-align: center; font-size: 9px; }
+#libraryScrim { position: fixed; inset: 36px 0 0; z-index: 7; background: #0d0b0d30; }
+#library { position: fixed; z-index: 8; left: 7px; top: 39px; bottom: 7px; width: min(350px,calc(100% - 22px)); display: flex; flex-direction: column; border-radius: 22px; background-color: #292725e6; box-shadow: inset 0 1px 0 #ffffff32,0 18px 70px #0008; overflow: hidden; animation: library-in .24s cubic-bezier(.2,.8,.2,1); }
+@keyframes library-in { from { opacity: 0; transform: translateX(-22px); } }
+.library-header { display: flex; align-items: center; justify-content: space-between; padding: 22px 21px 16px; flex: none; }
+.eyebrow { font-size: 9px; font-weight: 650; letter-spacing: .16em; color: #fff8e76b; }
+.library-header h2 { font-size: 26px; letter-spacing: -.055em; line-height: 1.2; margin: 4px 0 0; font-weight: 690; }
+.round-button { display: grid; place-items: center; border-radius: 50%; height: 28px; width: 28px; flex: none; background: #ffffff0b; color: #fff8e6a6; }
+.round-button svg { width: 15px; height: 15px; }
+.round-button:hover { background: #ffffff20; color: white; }
+.library-scroll { flex: 1; min-height: 0; overflow: auto; padding: 0 14px 18px; scrollbar-width: thin; scrollbar-color: #ffffff25 transparent; }
+#spotifySetup { padding: 10px 8px; }
+.connect-art { display: grid; place-items: center; width: 54px; height: 54px; border: 1px solid #ffffff18; border-radius: 18px; background: #ffffff08; margin: 16px 0 24px; }
+.connect-art svg { width: 28px; height: 28px; }
+#spotifySetup h3 { font-size: 27px; letter-spacing: -.05em; line-height: 1.16; font-weight: 650; margin: 0 0 12px; }
+#spotifySetup p { font-size: 12px; line-height: 1.65; color: #fff8e699; margin: 12px 0; }
+.primary-button,.secondary-button { width: 100%; padding: 11px 12px; border-radius: 12px; font-size: 12px; font-weight: 630; }
+.primary-button { background: #e9efdf; color: #232b24; margin-top: 14px; box-shadow: inset 0 1px 0 white,0 4px 12px #0002; }
+.primary-button:hover { background: #fffdf5; }
+.secondary-button { background: #ffffff0e; border: 1px solid #ffffff13; margin-top: 10px; }
+.secondary-button:hover { background: #ffffff19; }
+.text-button { font-size: 11px; color: #dbe8ce; display: inline-flex; align-items: center; gap: 4px; padding: 5px 0; }
+.text-button:hover { color: white; }
+.text-button svg { width: 13px; height: 13px; }
+#connectionSettings { border-top: 1px solid #ffffff13; margin-top: 24px; padding-top: 16px; }
+#connectionSettings summary { font-size: 11px; color: #fff8e6a6; cursor: pointer; }
+.connection-fields { padding-top: 14px; }
+.connection-fields label { display: block; font-size: 11px; margin-bottom: 7px; }
+.connection-fields code { display: block; white-space: normal; overflow-wrap: anywhere; user-select: text; font: 10px/1.6 "Inter",sans-serif; background: #0002; padding: 8px; border-radius: 8px; }
+#spotifyClientId,#libraryFilter { width: 100%; border: 1px solid #ffffff17; background: #00000024; border-radius: 10px; color: #fffaf3; padding: 10px 12px; font-size: 12px; outline-offset: 1px; }
+#spotifyClientId { font-size: 11px; }
+#libraryFilter { margin: 4px 0 12px; }
+#libraryFilter::placeholder { color: #fff6e460; }
+.library-toolbar { display: flex; align-items: center; gap: 6px; margin: 0 6px 10px; }
+#playlistCount { font-size: 11px; color: #fff8e68a; }
+#libraryRefresh { margin-left: auto; }
+#playlistHeading { padding: 3px 6px 12px; }
+#playlistTitle { font-size: 24px; letter-spacing: -.04em; line-height: 1.2; margin: 0 0 5px; overflow-wrap: anywhere; }
+#libraryStatus { margin: 10px 6px; color: #fff8e69a; font-size: 12px; line-height: 1.6; }
+#libraryStatus:empty { display: none; }
+.library-row { width: 100%; display: flex; gap: 11px; align-items: center; text-align: left; border-radius: 12px; padding: 8px; margin-bottom: 2px; }
+.library-row:hover { background: #ffffff0b; }
+.library-row:focus-visible { outline-offset: -2px; }
+.library-row[aria-current="true"] { background: #c9e9bc15; }
+.library-row[aria-current="true"] strong { color: #d3eec5; }
+.row-art { width: 43px; height: 43px; border-radius: 7px; flex: none; background: #ffffff0a; border: 1px solid #ffffff08; display: grid; place-items: center; position: relative; overflow: hidden; }
+.row-art img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+.row-art svg { width: 18px; height: 18px; color: #ffffff48; }
+.row-copy { min-width: 0; flex: 1; }
+.row-copy strong,.row-copy small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row-copy strong { font-size: 12px; font-weight: 590; line-height: 1.5; }
+.row-copy small { font-size: 10px; color: #fff8e67d; margin-top: 2px; }
+.row-end { font-size: 9px; color: #fff8e66b; font-variant-numeric: tabular-nums; }
+.row-end svg { width: 13px; height: 13px; }
+#libraryFooter { flex: none; margin: 0 21px; padding: 13px 0 15px; border-top: 1px solid #ffffff16; }
+#libraryFooter label { font-size: 10px; color: #fff8e675; }
+.device-picker { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+#playbackDevice { flex: 1; min-width: 0; border: 1px solid #ffffff16; border-radius: 8px; background: #24221f; color: #fff6e7bb; padding: 6px; font-size: 11px; }
+#deviceStatus { color: #fff8e669; font-size: 9px; line-height: 1.4; margin: 6px 0 10px; }
+.library-account { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.library-account span { display: flex; align-items: center; gap: 5px; font-size: 9px; color: #fff8e695; }
+.library-account svg { width: 12px; height: 12px; }
+.library-account button { font-size: 9px; color: #fff8e67f; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+body.library-open main { pointer-events: none; }
+@media (max-width:390px) { .source .external { display: none; } #sourceText { font-size: 10px; } .source { gap: 4px; } .volume-control { gap: 5px; } }
+@media (max-height:550px) { .library-header { padding-top: 13px; padding-bottom: 10px; } #libraryFooter { padding-top: 8px; padding-bottom: 8px; } .connect-art { margin: 4px 0 12px; } }

@@ -1,0 +1,39 @@
+@font-face { font-family: "Archivo"; src: url("Fonts/archivo.ttf") format("truetype"); font-weight: 100.0 900.0; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("Fonts/barlow.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Bricolage Grotesque"; src: url("Fonts/bricolagegrotesque.ttf") format("truetype"); font-weight: 200.0 800.0; font-display: swap; }
+@font-face { font-family: "DM Sans"; src: url("Fonts/dmsans.ttf") format("truetype"); font-weight: 100.0 1000.0; font-display: swap; }
+@font-face { font-family: "Lexend"; src: url("Fonts/lexend.ttf") format("truetype"); font-weight: 100.0 900.0; font-display: swap; }
+@font-face { font-family: "Manrope"; src: url("Fonts/manrope.ttf") format("truetype"); font-weight: 200.0 800.0; font-display: swap; }
+@font-face { font-family: "Montserrat"; src: url("Fonts/montserrat.ttf") format("truetype"); font-weight: 100.0 900.0; font-display: swap; }
+@font-face { font-family: "Nunito"; src: url("Fonts/nunito.ttf") format("truetype"); font-weight: 200.0 1000.0; font-display: swap; }
+@font-face { font-family: "Space Grotesk"; src: url("Fonts/spacegrotesk.ttf") format("truetype"); font-weight: 300.0 700.0; font-display: swap; }
+@font-face { font-family: "Work Sans"; src: url("Fonts/worksans.ttf") format("truetype"); font-weight: 100.0 900.0; font-display: swap; }
+@font-face { font-family: "Crimson Text"; src: url("Fonts/crimsontext.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "DM Serif Display"; src: url("Fonts/dmserifdisplay.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Fraunces"; src: url("Fonts/fraunces.ttf") format("truetype"); font-weight: 100.0 900.0; font-display: swap; }
+@font-face { font-family: "Gloock"; src: url("Fonts/gloock.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Instrument Serif"; src: url("Fonts/instrumentserif.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Playfair Display"; src: url("Fonts/playfairdisplay.ttf") format("truetype"); font-weight: 400.0 900.0; font-display: swap; }
+@font-face { font-family: "Spectral"; src: url("Fonts/spectral.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Young Serif"; src: url("Fonts/youngserif.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Archivo Black"; src: url("Fonts/archivoblack.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Barlow Condensed"; src: url("Fonts/barlowcondensed.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Bebas Neue"; src: url("Fonts/bebasneue.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Bungee"; src: url("Fonts/bungee.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Caveat"; src: url("Fonts/caveat.ttf") format("truetype"); font-weight: 400.0 700.0; font-display: swap; }
+@font-face { font-family: "Pacifico"; src: url("Fonts/pacifico.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Righteous"; src: url("Fonts/righteous.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Courier Prime"; src: url("Fonts/courierprime.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("Fonts/ibmplexmono.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("Fonts/jetbrainsmono.ttf") format("truetype"); font-weight: 100.0 800.0; font-display: swap; }
+@font-face { font-family: "Space Mono"; src: url("Fonts/spacemono.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Allura"; src: url("Fonts/allura.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Berkshire Swash"; src: url("Fonts/berkshireswash.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Courgette"; src: url("Fonts/courgette.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Croissant One"; src: url("Fonts/croissantone.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Dancing Script"; src: url("Fonts/dancingscript.ttf") format("truetype"); font-weight: 400.0 700.0; font-display: swap; }
+@font-face { font-family: "Grand Hotel"; src: url("Fonts/grandhotel.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Lobster"; src: url("Fonts/lobster.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Oleo Script"; src: url("Fonts/oleoscript.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Shrikhand"; src: url("Fonts/shrikhand.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Sofia"; src: url("Fonts/sofia.ttf") format("truetype"); font-weight: 400; font-display: swap; }

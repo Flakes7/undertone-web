@@ -1,0 +1,9 @@
+{
+  "name": "undertone-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A responsive Spotify lyrics companion with glass styling and synced lyrics.",
+  "scripts": { "dev": "node scripts/serve.mjs", "test": "node --test tests/*.test.mjs", "check": "node scripts/check.mjs" },
+  "engines": { "node": ">=22" }
+}

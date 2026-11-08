@@ -1,0 +1,70 @@
+html { background: #191716; min-height: 100%; }
+body { height: 100svh; height: 100dvh; min-height: 300px; position: relative; -webkit-text-size-adjust: 100%; }
+button,input,select,summary,a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+button,a { -webkit-touch-callout: none; }
+.frame { height: calc(68px + env(safe-area-inset-top)); padding: env(safe-area-inset-top) max(24px,env(safe-area-inset-right)) 0 max(24px,env(safe-area-inset-left)); app-region: none; -webkit-app-region: no-drag; }
+.signature { font-size: 14px; gap: 9px; color: #fff9ebcb; }
+#libraryToggle { height: 42px; padding: 8px; margin-left: -8px; border-radius: 12px; }
+#libraryToggle svg { width: 22px; height: 22px; }
+.web-tagline { font-size: 11px; color: #fff7e770; letter-spacing: .01em; }
+.window-actions { gap: 7px; align-items: center; }
+.window-actions button { width: 40px; height: 40px; border-radius: 12px; }
+.window-actions .connect-pill { width: auto; padding: 0 15px; font-size: 12px; color: #f0f6e5; background: #fff7e915; border: 1px solid #fff7e921; border-radius: 24px; }
+body #miniPin,body #pin,[data-action="minimize"],[data-action="close"],#edges { display: none !important; }
+main { max-width: 1030px; }
+#webStatus { text-align: center; color: #fff7e78c; font-size: 11px; line-height: 1.5; margin: 4px 20px 0; min-height: 17px; }
+.now { margin-top: clamp(12px,2.6vh,24px); }
+.more { width: 42px; height: 42px; }
+.timeline { gap: 12px; font-size: 11px; }
+input[type="range"] { height: 28px; }
+input[type="range"]::-webkit-slider-thumb { width: 12px; height: 12px; margin-top: -4.5px; opacity: 1; }
+input[type="range"]::-moz-range-track { height: 3px; border-radius: 4px; background: #fff4dc30; }
+input[type="range"]::-moz-range-progress { height: 3px; background: #fff4dcb8; }
+input[type="range"]::-moz-range-thumb { width: 12px; height: 12px; border: 0; border-radius: 50%; background: #fff9ec; }
+.dock { margin-top: 7px; min-height: 54px; }
+.play { width: 50px; height: 50px; }.play svg { width: 20px; height: 20px; }
+.skip { width: 42px; height: 44px; }.skip svg { width: 20px; height: 20px; }
+.transport { gap: 9px; }
+footer { margin-bottom: calc(17px + env(safe-area-inset-bottom)); }
+.volume-control { width: min(100%,122px); }.volume-control button { padding: 12px 0; }.volume-control svg { width: 18px;height: 18px; }
+#mode { margin-top: 6px; font-size: 10px; }
+.menu { width: 300px; padding: 15px; max-height: calc(100dvh - 100px - env(safe-area-inset-top)); border-radius: 23px; }
+.menu header { padding-bottom: 12px; }.menu h2 { font-size: 16px; }
+.menu-item { min-height: 44px; font-size: 14px; }.setting { min-height: 49px; }
+#dismiss { min-width: 32px; min-height: 32px; display: grid; place-items: center; }
+#lyricFont { height: 36px; }.sizes,.stepper { height: 36px; }.sizes button,.stepper button { height: 32px; }
+#scrim { inset: 0; }.frame { z-index: 4; }
+#libraryScrim { inset: 0; background: #0d0b0d55; }
+#library { top: calc(10px + env(safe-area-inset-top)); bottom: calc(10px + env(safe-area-inset-bottom)); left: max(10px,env(safe-area-inset-left)); width: min(370px,calc(100% - 20px)); background-color: #292725ed; }
+.round-button { width: 40px; height: 40px; }.round-button svg { width: 18px; height: 18px; }
+.library-row { min-height: 64px; padding: 9px; }.row-copy strong { font-size: 13px; }.row-copy small { font-size: 11px; }
+#libraryFilter,#spotifyClientId { font-size: 16px; min-height: 44px; }#playbackDevice { font-size: 13px; min-height: 39px; }
+.text-button { min-height: 34px; }.primary-button,.secondary-button { min-height: 44px; }
+#spotifySetup p { font-size: 13px; }.connection-fields a { display: block; font-size: 11px; color: #dbe8ce; padding: 10px 0; }
+#toast { position: fixed; bottom: calc(110px + env(safe-area-inset-bottom)); }
+.no-script { position: fixed; inset: 20px; padding: 30px; background: #24201d; z-index: 20; }
+body.mini { width: min(440px,calc(100% - 24px)); height: 310px; min-height: 310px; margin: max(12px,env(safe-area-inset-top)) auto; overflow: hidden; border: 1px solid #ffffff27; border-radius: 24px; box-shadow: 0 20px 70px #0005; }
+.mini .frame { height: 42px; padding: 0 12px; }.mini .web-tagline,.mini #webStatus,.mini #webConnect { display: none; }
+.mini .window-actions button { width: 30px; height: 32px; }.mini .now { margin-top: 8px; }.mini .stage { min-height: 45px; }
+.mini footer { margin-bottom: 10px; }.mini .dock { min-height: 42px; }.mini .play { width: 38px;height: 38px; }.mini .skip { width: 36px;height: 38px; }
+.mini .volume-control { width: min(100%,85px); }.mini #mode { height: 12px; }.mini #miniCurrent { font-size: 23px; }
+.mini #toast { position: fixed; bottom: 20px; }
+@media (max-width:600px) {
+  .frame { height: calc(58px + env(safe-area-inset-top)); padding-left: 21px; padding-right: 14px; }
+  .web-tagline { display: none; }.signature { font-size: 12px; }.window-actions { gap: 4px; }.window-actions .connect-pill { padding: 0 12px; font-size: 11px; }
+  #maximize { display: none; }.window-actions button { width: 36px; }.frame #miniToggle { width: 34px; }
+  :root { --inset: clamp(20px,6vw,34px); --type: clamp(27px,8.7vw,49px); }
+  .source .external,#sourceText { display: none; }.source { min-width: 35px; min-height: 42px; }.source .spotify { width: 22px;height: 22px; }
+  .transport { gap: 4px; }.skip { width: 38px; }.play { width: 48px;height: 48px; }
+  .volume-control { width: min(100%,89px);gap: 6px; }.volume-control svg { width: 16px;height: 16px; }
+  #webStatus { font-size: 10px; margin-top: 0; }.now { margin-top: 19px; }.metadata h1 { font-size: 22px; }.metadata p { font-size: 15px; }
+  .cover { width: 67px; }.line { margin-bottom: 34px; }.line.back { max-width: 88%; }
+  footer { margin-top: 0; margin-bottom: calc(14px + env(safe-area-inset-bottom)); }
+  #library { width: calc(100% - 20px); max-width: 370px; }
+}
+@media (max-height:500px) and (min-width:600px) {
+  .frame { height: 42px; }.now { margin-top: 4px; padding-bottom: 5px; }.cover { width: 42px; }#webStatus { display: none; }
+  footer { margin-bottom: calc(6px + env(safe-area-inset-bottom)); }.dock { min-height: 35px;margin-top: 0; }.play { width: 35px;height: 35px; }.skip { height: 34px; }
+  .library-header { padding: 10px 20px; }#libraryFooter { padding: 5px 0; }#libraryHeading { font-size: 20px; }.eyebrow { display: none; }
+}
+@media (prefers-reduced-motion:reduce) { .backdrop,.line { transition: none; } }

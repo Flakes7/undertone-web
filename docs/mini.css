@@ -1,0 +1,43 @@
+.mini-only { display: none !important; }
+.shortcut { margin-left: auto; font-size: 9px; opacity: .45; }
+body.mini { --inset: 17px; }
+.mini .mini-only { display: flex !important; }
+.mini .frame { height: 30px; padding-left: 12px; border-bottom: 1px solid #ffffff08; }
+.mini .handle { width: 22px; height: 3px; opacity: .55; }
+.mini .signature { font-size: 9px; gap: 5px; }
+.mini .signature svg { width: 15px !important; height: 15px !important; }
+.mini .window-actions button { width: 26px; height: 23px; justify-content: center; align-items: center; }
+.mini #miniPin[aria-pressed="true"] { color: #f1f6df; background: #ffffff10; }
+.mini #maximize { display: none; }
+.mini .now { margin: 10px var(--inset) 0; padding-bottom: 9px; gap: 11px; }
+.mini .cover { width: 39px; border-radius: 8px; }
+.mini .metadata h1 { font-size: 14px; letter-spacing: -.025em; }
+.mini .metadata p { font-size: 11px; margin-top: 3px; font-weight: 450; }
+.mini #more { display: none; }
+.mini .stage { margin: 0 var(--inset); min-height: 44px; }
+.mini .viewport,.mini #empty,.mini #follow { display: none !important; }
+#miniLyrics { height: 100%; overflow-y: auto; overflow-x: hidden; flex-direction: column; justify-content: safe center; scrollbar-width: thin; scrollbar-color: #ffffff20 transparent; padding: 3px 0 5px; }
+#miniCurrent { font: 700 clamp(18px,8.2vh,25px)/1.22 var(--lyric-font,"Inter"),"Segoe UI",sans-serif; font-synthesis: none; letter-spacing: var(--lyric-tracking,-.025em); margin: 0; overflow-wrap: anywhere; text-wrap: pretty; }
+#miniLyrics.artistic #miniCurrent { line-height: 1.34; }
+#miniCurrent.changed { animation: mini-line-in .25s ease-out; }
+#miniHint { font-size: 10px; color: #fff7e786; line-height: 1.4; margin: 5px 0 0; }
+#miniHint:empty { display: none; }
+#miniLyrics.quiet #miniCurrent { font-family: "Inter","Segoe UI",sans-serif; font-size: 15px; font-weight: 540; letter-spacing: -.02em; color: #fff8e6b8; }
+.mini footer { margin: 4px var(--inset) 9px; }
+.mini .timeline { gap: 7px; font-size: 8px; }
+.mini .timeline span { min-width: 22px; }
+.mini .dock { margin-top: 0; min-height: 31px; }
+.mini .play { width: 29px; height: 29px; }
+.mini .play svg { width: 13px; height: 13px; }
+.mini .skip { width: 23px; height: 27px; }
+.mini .skip svg { width: 14px; height: 14px; }
+.mini .source .external,.mini #sourceText { display: none; }
+.mini .source .spotify { width: 15px; height: 15px; }
+.mini .volume-control { width: min(100%,76px); }
+.mini .volume-control svg { width: 14px; height: 14px; }
+.mini #mode { font-size: 8px; height: 9px; line-height: 9px; margin-top: 0; }
+.mini #mode:empty { display: none; }
+.mini #toast { bottom: 63px; font-size: 10px; padding: 7px 10px; }
+.mini .shade { background: linear-gradient(140deg,#1713119e,#0d0c10ce); }
+@keyframes mini-line-in { from { opacity: .3; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { #miniCurrent.changed { animation: none; } }
